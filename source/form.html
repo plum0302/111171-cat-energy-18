@@ -30,8 +30,83 @@
     </header>
 
     <main class="page-main">
-
+      <h1 class="page-main__title">Подбор программы</h1>
+      <p class="page-main__slogan">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="program-selection" method="post" action="https://echo.htmlacademy.ru">
+        <p class="program-selection__data-form data-form">
+          <label class="data-form__label">
+            Имя:*
+            <input class="data-form__input" type="text" name="name">
+          </label>
+          <label class="data-form__label">
+            Вес (кг):*
+            <input class="data-form__input" type="text" name="weight">
+          </label>
+          <label class="data-form__label">
+            Возраст (лет):
+            <input class="data-form__input" type="text" name="age">
+          </label>
+        </p>
+        <ul class="program-selection__radio-form radio-form">
+          <li class="radio-form__button radio-button">
+            <input class="radio-button__input" type="radio" name="purpose" id="slim">
+            <label class="radio-button__name" for="slim">Похудение</label>
+          </li>
+          <li class="radio-form__button radio-button">
+            <input class="radio-button__input" type="radio" name="purpose" id="mass">
+            <label class="radio-button__name" for="mass">Набор массы</label>
+          </li>
+          <li class="radio-form__button radio-button">
+            <input class="radio-button__input" type="radio" name="purpose" id="unknown">
+            <label class="radio-button__name" for="unknown">Не знаю (нужен ваш совет)</label>
+          </li>
+        </ul>
+        <fieldset class="program-selection__data-form data-form">
+          <legend class="data-form__title">Контактные данные (владельца кота)</legend>
+          <label class="data-form__label">
+            E-mail:*
+            <input class="data-form__input data-form__input--email" type="text" name="email"></label>
+          <label class="data-form__label">
+            Телефон:*
+            <input class="data-form__input data-form__input--tel" type="text" name="tel"></label>
+        </fieldset>
+        <fieldset class="program-selection__comment comment">
+          <legend class="comment__title">Комментарий</legend>
+          <textarea class="comment__area">Расскажите обо всех повадках кота</textarea>
+        </fieldset>
+        <fieldset class="program-selection__extra-info extra-info">
+          <ul class="extra-info__list">
+            <li class="extra-info__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" name="sweetener" id="sweetener">
+              <label class="checkbox__label" for="sweetener">Сахарозаменитель</label>
+            </li>
+            <li class="extra-info__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" name="water" id="water">
+              <label class="checkbox__label" for="water">Питьевая вода</label>
+            </li>
+            <li class="extra-info__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" name="milk" id="milk">
+              <label class="checkbox__label" for="milk">Молоко</label>
+            </li>
+            <li class="extra-info__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" name="vitamins" id="vitamins">
+              <label class="checkbox__label" for="vitamins">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <input class="program-selection__submit button" type="submit" name="submit" value="Отправить заявку">
+        <b class="program-selection__form-info">* - Обязательные поля</b>
+      </form>
     </main>
+
+    <section class="location">
+        <h2 class="visually-hidden">Где нас найти</h2>
+        <b class="location__offer">Приглашаем к сотрудничеству дилеров!</b>
+        <p class="location__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петергбург</p>
+        <div class="location__map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1883e3d730a35aecdfddc020bbc6b89f27709466b0dccf9471e844b8ed6b2a3&amp;source=constructor" width="320" height="365" frameborder="0"></iframe>
+        </div>
+      </section>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">

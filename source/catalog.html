@@ -32,8 +32,8 @@
       <h1 class="page-main__title">Каталог продукции</h1>
 
       <section class="catalog">
-        <ul class="catalog-list">
-          <li class="catalog-list__item catalog-item">
+        <ul class="catalog__list">
+          <li class="catalog__item catalog-item">
             <h2 class="catalog-item__title">Cat Energy Pro 500 г</h2>
             <img class="catalog-item__image" src="https://via.placeholder.com/150x150" width="150" height="150">
             <ul class="catalog-item__characteristics characteristics">
@@ -44,9 +44,9 @@
               <li class="characteristics__name">Цена</li>
               <li class="characteristics__value">700 Р.</li>
             </ul>
-            <button class="catalog-item__button button" type="button">Заказать</button>
+            <a class="catalog-item__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog-list__item catalog-item">
+          <li class="catalog__item catalog-item">
             <h2 class="catalog-item__title">
               <a href="#">Cat Energy Pro 1000 г</a>
             </h2>
@@ -61,9 +61,9 @@
               <li class="characteristics__name">Цена</li>
               <li class="characteristics__value">1000 Р.</li>
             </ul>
-            <button class="catalog-item__button button" type="button">Заказать</button>
+            <a class="catalog-item__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog-list__item catalog-item">
+          <li class="catalog__item catalog-item">
             <h2 class="catalog-item__title">
               <a href="#">Cat Energy Pro 500 г</a>
             </h2>
@@ -78,9 +78,9 @@
               <li class="characteristics__name">Цена</li>
               <li class="characteristics__value">700 Р.</li>
             </ul>
-            <button class="catalog-item__button button" type="button">Заказать</button>
+            <a class="catalog-item__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog-list__item catalog-item">
+          <li class="catalog__item catalog-item">
             <h2 class="catalog-item__title">
               <a href="#">Cat Energy Pro 1000 г</a>
             </h2>
@@ -95,9 +95,9 @@
               <li class="characteristics__name">Цена</li>
               <li class="characteristics__value">1000 Р.</li>
             </ul>
-            <button class="catalog-item__button button" type="button">Заказать</button>
+            <a class="catalog-item__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog-list__item catalog-item">
+          <li class="catalog__item catalog-item">
             <h2 class="catalog-item__title">
               <a href="#">Cat Energy Slim 500 г</a>
             </h2>
@@ -112,9 +112,9 @@
               <li class="characteristics__name">Цена</li>
               <li class="characteristics__value">400 Р.</li>
             </ul>
-            <button class="catalog-item__button button" type="button">Заказать</button>
+            <a class="catalog-item__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog-list__item catalog-item">
+          <li class="catalog__item catalog-item">
             <h2 class="catalog-item__title">
               <a href="#">Cat Energy Slim 1000 г</a>
             </h2>
@@ -129,9 +129,9 @@
               <li class="characteristics__name">Цена</li>
               <li class="characteristics__value">700 Р.</li>
             </ul>
-            <button class="catalog-item__button button" type="button">Заказать</button>
+            <a class="catalog-item__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog-list__item catalog-item">
+          <li class="catalog__item catalog-item">
             <h2 class="catalog-item__title">
               <a href="#">Cat Energy Slim 500 г</a>
             </h2>
@@ -146,16 +146,85 @@
               <li class="characteristics__name">Цена</li>
               <li class="characteristics__value">500 Р.</li>
             </ul>
-            <button class="catalog-item__button button" type="button">Заказать</button>
+            <a class="catalog-item__button button" href="#">Заказать</a>
           </li>
         </ul>
         <div class="catalog__show-more show-more">
           <h3 class="show-more__title">Показать еще 100500 товаров</h3>
           <span class="show-more__slogan">На самом деле вкусов гораздо больше!</span>
-          <button class="show-more__button button" type="button">Поазать все</button>
+          <a class="show-more__button button button--grey" href="#">Поазать все</a>
+        </div>
+        <div class="catalog__extra-goods extra-goods">
+          <h2 class="extra-goods__title">Дополнительные товары</h2>
+          <ul class="extra-goods__list">
+            <li class="extra-goods__item extra-item">
+              <h3 class="extra-item__title">
+                <a href="#">Сахарозаменитель</a>
+              </h3>
+              <ul class="extra-item__info item-info">
+                <li class="item-info__amount">
+                  1 упаковка (100 г)
+                </li>
+                <li class="item-info__price">
+                  200 Р
+                </li>
+              </ul>
+            </li>
+            <li class="extra-goods__item extra-item">
+              <h3 class="extra-item__title">
+                <a href="#">Питьевая вода</a>
+              </h3>
+              <ul class="extra-item__info item-info">
+                <li class="item-info__amount">
+                  5 литров
+                </li>
+                <li class="item-info__price">
+                  50 Р
+                </li>
+              </ul>
+            </li>
+            <li class="extra-goods__item extra-item">
+              <h3 class="extra-item__title">
+                <a href="#">Молоко</a>
+              </h3>
+              <ul class="extra-item__info item-info">
+                <li class="item-info__amount">
+                  1 литр
+                </li>
+                <li class="item-info__price">
+                  100 Р
+                </li>
+              </ul>
+            </li>
+            <li class="extra-goods__item extra-item">
+              <h3 class="extra-item__title">
+                <a href="#">Витамины</a>
+              </h3>
+              <ul class="extra-item__info item-info">
+                <li class="item-info__amount">
+                  1 упаковка (30 г)
+                </li>
+                <li class="item-info__price">
+                  300 Р
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog__promo">
+          <img class="catalog__promo-banner" src="https://via.placeholder.com/280x290">
         </div>
       </section>
     </main>
+
+    <section class="location">
+        <h2 class="visually-hidden">Где нас найти</h2>
+        <b class="location__offer">Приглашаем к сотрудничеству дилеров!</b>
+        <p class="location__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петергбург</p>
+        <div class="location__map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1883e3d730a35aecdfddc020bbc6b89f27709466b0dccf9471e844b8ed6b2a3&amp;source=constructor" width="320" height="365" frameborder="0"></iframe>
+        </div>
+      </section>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -177,7 +246,7 @@
         <section class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__title">HTML Academy</span>
-            <img class="copyright__image" src="https://via.placeholder.com/150x150" alt="HTML Academy logo">
+            <img class="copyright__image" src="https://via.placeholder.com/150x50" alt="HTML Academy logo">
           </a>
         </section>
       </div>
