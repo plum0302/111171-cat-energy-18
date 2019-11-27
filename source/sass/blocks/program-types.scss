@@ -1,0 +1,24 @@
+.program-types__item {
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-bottom: 22px;
+
+  background-color: $light-grey;
+}
+
+.program-types__list {
+  list-style: none;
+}
+
+.program-types__title {
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.program-types__description {
+  @include arial;
+}
+
+.program-types__button {
+  line-height: 16px;
+}
