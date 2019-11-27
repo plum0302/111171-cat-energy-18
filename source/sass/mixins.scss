@@ -1,0 +1,7 @@
+@mixin arial {
+  font-family: "Arial", sans-serif;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: $btn-grey;
+}
