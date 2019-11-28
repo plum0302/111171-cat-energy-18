@@ -1,0 +1,10 @@
+.show-more {
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+.show-more__slogan {
+  @include arial;
+  font-size: 12px;
+  line-height: 16px;
+}

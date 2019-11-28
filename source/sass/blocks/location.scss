@@ -1,0 +1,15 @@
+.location {
+  padding-top: 31px;
+  padding-bottom: 26px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.location__adress {
+  @include arial;
+  line-height: 20px;
+}
+
+.location--grey {
+  background-color: $light-grey;
+}

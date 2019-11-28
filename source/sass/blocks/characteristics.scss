@@ -1,3 +1,7 @@
+.characteristics {
+  list-style: none;
+}
+
 .characteristics__name,
 .characteristics__value {
   @include arial;

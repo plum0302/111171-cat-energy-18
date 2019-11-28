@@ -1,0 +1,19 @@
+.example-block {
+  padding-top: 33px;
+  padding-bottom: 39px;
+
+  background-color: $light-grey;
+}
+
+.example-block__title {
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.example-block__description {
+  @include arial;
+}
+
+.example-block__expense {
+  font-size: 14px;
+}
