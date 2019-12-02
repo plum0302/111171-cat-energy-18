@@ -5,3 +5,9 @@
   line-height: 18px;
   color: $btn-grey;
 }
+
+@mixin form-font {
+  font-size: 16px;
+  line-height: 18px;
+  color: $dark-grey;
+}

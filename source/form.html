@@ -15,14 +15,14 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
+            <li class="site-list__item site-list__item--active">
+              <a>Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -31,8 +31,8 @@
 
     <main class="page-main">
       <h1 class="page-main__title">Подбор программы</h1>
-      <p class="page-main__slogan">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="program-selection" method="post" action="https://echo.htmlacademy.ru">
+        <b class="program-selection__slogan">Заполните анкету и мы подберем программу питания для вашего кота</b>
         <p class="program-selection__data-form data-form">
           <label class="data-form__label">
             Имя:*
@@ -75,6 +75,7 @@
           <textarea class="comment__area">Расскажите обо всех повадках кота</textarea>
         </fieldset>
         <fieldset class="program-selection__extra-info extra-info">
+          <legend class="extra-info__title">Дополнительно</legend>
           <ul class="extra-info__list">
             <li class="extra-info__checkbox checkbox">
               <input class="checkbox__input" type="checkbox" name="sweetener" id="sweetener">
@@ -95,11 +96,11 @@
           </ul>
         </fieldset>
         <input class="program-selection__submit button" type="submit" name="submit" value="Отправить заявку">
-        <b class="program-selection__form-info">* - Обязательные поля</b>
+        <b class="program-selection__form-info"><sup>*</sup> - Обязательные поля</b>
       </form>
     </main>
 
-    <section class="location">
+    <section class="location location--grey">
         <h2 class="visually-hidden">Где нас найти</h2>
         <b class="location__offer">Приглашаем к сотрудничеству дилеров!</b>
         <p class="location__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петергбург</p>

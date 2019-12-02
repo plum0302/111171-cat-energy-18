@@ -1,0 +1,16 @@
+.data-form {
+  padding-top: 35px;
+  padding-bottom: 23px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.data-form__label {
+  @include form-font;
+}
+
+.data-form__title {
+  font-size: 24px;
+  line-height: 24px;
+}

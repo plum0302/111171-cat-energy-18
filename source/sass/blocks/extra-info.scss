@@ -1,0 +1,12 @@
+.extra-info {
+  @include form-font;
+}
+
+.extra-info__title {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.extra-info__list {
+  list-style: none;
+}

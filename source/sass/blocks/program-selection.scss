@@ -1,0 +1,16 @@
+.program-selection {
+  padding-bottom: 35px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.program-selection__slogan {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.program-selection__form-info {
+  @include arial;
+  line-height: 16px;
+}

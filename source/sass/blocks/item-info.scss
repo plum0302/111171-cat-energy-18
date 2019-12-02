@@ -1,0 +1,9 @@
+.item-info {
+  list-style: none;
+}
+
+.item-info__amount,
+.item-info__price {
+  @include arial;
+  line-height: 14px;
+}
