@@ -1,0 +1,15 @@
+.main-nav__list {
+  padding-top: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 62%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 50%;
+  }
+}

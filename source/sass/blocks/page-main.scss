@@ -1,15 +1,30 @@
-.page-main {
-  padding-top: 20px;
+.page-main--index {
+  background-image: url("/img/index-background-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.page-main__wrapper {
   width: 280px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.page-main__title {
-  font-size: 36px;
-  line-height: 60px;
+@media (min-width: $tablet-width) {
+  .page-main--index {
+    background-image: none;
+  }
+
+  .page-main__wrapper {
+    width: 708px;
+  }
 }
 
-.page-main__title--white {
-  color: $white;
-  margin-top: -5px;
+@media (min-width: $desktop-width) {
+  .page-main__wrapper {
+    width: 1220px;
+    align-items: flex-start;
+  }
 }
