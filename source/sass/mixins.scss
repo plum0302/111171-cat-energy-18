@@ -4,10 +4,22 @@
   font-size: 14px;
   line-height: 18px;
   color: $btn-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @mixin form-font {
   font-size: 16px;
   line-height: 18px;
   color: $dark-grey;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }

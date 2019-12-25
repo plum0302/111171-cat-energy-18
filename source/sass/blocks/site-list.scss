@@ -1,9 +1,51 @@
 .site-list {
-  list-style: none;
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .site-list__item {
+  height: 66px;
+  padding-top: 24px;
+  box-sizing: border-box;
+
   font-size: 20px;
   line-height: 20px;
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+  }
+
+  .site-list__item {
+    box-sizing: border-box;
+    padding-top: 19px;
+
+    font-size: 18px;
+    line-height: 24.86px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    padding-left: 130px;
+  }
+
+  .site-list__item {
+    margin-right: 35px;
+
+    font-size: 20px;
+  }
 }
