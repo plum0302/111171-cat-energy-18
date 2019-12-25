@@ -1,9 +1,11 @@
 .catalog {
-  padding-top: 32px;
+  border: 1px solid $border-light;
 }
 
 .catalog__list {
-  list-style: none;
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog__show-more {
@@ -14,4 +16,24 @@
 .catalog__promo {
   margin-top: 39px;
   margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    border: none;
+  }
+
+  .catalog__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    margin-bottom: 140px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

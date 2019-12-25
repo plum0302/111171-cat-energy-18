@@ -1,5 +1,8 @@
 .characteristics {
-  list-style: none;
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 12px;
 }
 
 .characteristics__name,
@@ -7,4 +10,24 @@
   @include arial;
   font-size: 12px;
   line-height: 16px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.characteristics__value {
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .characteristics {
+    padding-top: 19px;
+  }
+
+  .characteristics__name,
+  .characteristics__value {
+    line-height: 16px;
+    padding-top: 8px;
+    height: 32px;
+    border-bottom: 1px solid $border-character;
+  }
 }

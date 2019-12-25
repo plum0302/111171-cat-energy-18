@@ -1,3 +1,8 @@
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .page-main--index {
   background-image: url("/img/index-background-mobile@1x.jpg");
   background-position: top center;
@@ -12,9 +17,35 @@
   align-items: center;
 }
 
+.page-main__wrapper--catalog {
+  width: 320px;
+  display: block;
+}
+
+.page-main__title {
+  font-size: 36px;
+  line-height: 60px;
+  text-transform: none;
+  font-weight: normal;
+  margin-top: 16px;
+  margin-left: 20px;
+  margin-bottom: 28px;
+}
+
 @media (min-width: $tablet-width) {
+  .page-main {
+    width: $tablet-width;
+  }
+
   .page-main--index {
     background-image: none;
+  }
+
+  .page-main__title {
+    font-size: 60px;
+    margin-left: 0;
+    margin-top: 32px;
+    margin-bottom: 166px;
   }
 
   .page-main__wrapper {

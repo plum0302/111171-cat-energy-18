@@ -1,6 +1,8 @@
 .button {
-  height: 41px;
-  padding-top: 11px;
+  height: 40px;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 8px;
   box-sizing: border-box;
 
   background-color: $green;
@@ -20,11 +22,15 @@
   line-height: 18px;
 }
 
+.button--grey {
+  background-color: $light-grey;
+  color: $btn-grey;
+}
+
 @media (min-width: $tablet-width) {
   .button {
-    height: 52px;
+    height: 40px;
     width: 245px;
-
     font-size: 20px;
   }
 }

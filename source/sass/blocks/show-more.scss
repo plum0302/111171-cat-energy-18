@@ -1,10 +1,23 @@
 .show-more {
-  padding-top: 27px;
+  padding-top: 63px;
   padding-bottom: 25px;
+  text-align: center;
+  border-bottom: 1px solid $border-light;
+}
+
+.show-more__title {
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 3px;
 }
 
 .show-more__slogan {
   @include arial;
   font-size: 12px;
   line-height: 16px;
+}
+
+.show-more__button {
+  margin-top: 20px;
 }
