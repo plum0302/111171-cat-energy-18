@@ -8,11 +8,6 @@
   flex-direction: column;
 }
 
-.catalog__show-more {
-  padding-top: 27px;
-  padding-bottom: 25px;
-}
-
 .catalog__promo {
   margin-top: 39px;
   margin-bottom: 35px;
@@ -30,10 +25,10 @@
   }
 
   .catalog__item {
-    margin-bottom: 140px;
+    margin-top: 140px;
+  }
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  .catalog__show-more {
+    margin-top: 142px;
   }
 }
